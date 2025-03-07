@@ -145,9 +145,9 @@ function SideBar() {
 function App({children}) {
  
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full fixed">
     <Navigation/>
-    <div className="flex absolute overflow-hidden bg-gray-50 dark:bg-gray-900 w-full h-full top-[60px] left-[255px]">
+    <div className="flex absolute overflow-hidden bg-gray-50 dark:bg-gray-900 w-full h-full top-[60px] left-[255px]" style={{height: "calc(100% - 60px)", width: "calc(100% - 255px)"}}>
     
       <SideBar/>
       
