@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route  } fr
 
 import Courses from './pages/Courses';
 import Home from './pages/Home';
+import ChatBot from './pages/ChatBot';
 
 function Router() {
   
@@ -10,6 +11,7 @@ function Router() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="courses" element={<Courses />} />
+        <Route path="chatbot" element={<ChatBot />} />
         <Route path="test" element={<div className={"h-full w-full"}>Hello World</div>} />
       </Routes>
     </BrowserRouter>
