@@ -1,10 +1,12 @@
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
+import MobileBar from "./components/MobileBar";
 
 function App({ children }) {
   return (
     <div className='w-full h-full'>
       <NavBar />
+      <MobileBar />
       <div className="flex pt-16">
         <SideBar />
 
@@ -15,6 +17,9 @@ function App({ children }) {
           {children}
         </main>
       </div>
+      
+      
+      
     </div>
   );
 }

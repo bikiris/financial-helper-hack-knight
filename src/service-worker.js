@@ -21,6 +21,7 @@ const urlsToCache = [
   '/src/components/SideBar.jsx',
   '/src/components/NewsContainer.jsx',
   '/src/components/NavBar.jsx',
+  '/src/components/MobileBar.jsx',
   '/src/components/CourseContainer.jsx',
   '/src/components/BalanceContainer.jsx',
   // Add other static assets to cache
