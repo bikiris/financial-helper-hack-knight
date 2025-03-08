@@ -33,7 +33,7 @@ const newsData = [
 
 const Home = () => {
 
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState(newsData);
 
   useEffect(() => {
     axios.get(API_URL)

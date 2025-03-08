@@ -10,10 +10,7 @@ const user = {
 };
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Reports", href: "#", current: false },
+  { name: "Reports", href: "#", current: false }
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },
@@ -32,13 +29,9 @@ export default function Navigation() {
         <div className='mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex h-16 items-center justify-between'>
             <div className='flex items-center'>
-              <div className='shrink-0 flex text-indigo-600'>
-                <img
-                  alt='Your Company'
-                  src='https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500'
-                  className='size-8'
-                />
-                <span className="m-auto px-2">MoneyTalks!</span>
+              <div className='shrink-0 flex text-indigo-600 w-[190px]'>
+                <div className="font-bold font-extrabold bg-indigo-600 text-white w-[40px] h-[40px]  text-center flex rounded-md"><span className="m-auto">M</span></div>
+                <span className="m-auto ml-2">MoneyTalks!</span>
                 
               </div>
               <div className='hidden md:block'>

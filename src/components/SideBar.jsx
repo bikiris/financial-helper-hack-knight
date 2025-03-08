@@ -2,7 +2,8 @@ import {
     BugAntIcon,
     ChartBarSquareIcon,
     ChatBubbleLeftRightIcon,
-    NewspaperIcon
+    NewspaperIcon,
+    ServerStackIcon
 } from "@heroicons/react/24/outline";
 
 import {
@@ -24,6 +25,11 @@ const links = [
         title: "Courses",
         icon: <NewspaperIcon className='w-[24px]' />,
         url: "/courses"
+    },
+    {
+        title: "Reports",
+        icon: <ServerStackIcon className='w-[24px]' />,
+        url: "/reports"
     }
 ];
 

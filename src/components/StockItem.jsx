@@ -62,7 +62,7 @@ const StockItem = ({ symbol, name, stockPrice, currentValue, quantity, previousC
       className={`p-4 rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800 ${getHoverBgColorClass()} cursor-pointer transition-all duration-200 ${isExpanded ? "" :"self-start"}`}
       onClick={toggleExpanded}
     >
-      <div className="flex justify-between items-center">
+      <div className="md:flex  justify-between items-center">
         <div>
           <h2 className="text-xl font-bold">{symbol}</h2>
           <p className="text-gray-600">{name}</p>
