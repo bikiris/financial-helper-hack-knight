@@ -51,7 +51,7 @@ export default function SideBar() {
                         <Link
                           to={link.url}
                           className='flex items-center p-2 gap-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700'
-                          sidebar-toggle-item
+                          sidebarToggleItem={true}
                         >
                             {link.icon}
                             {link.title}
@@ -69,7 +69,7 @@ export default function SideBar() {
                 className='flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700'
               >
                 <BugAntIcon className='w-[24px]' />
-                <span className='ml-3' sidebarToggleItem>
+                <span className='ml-3' sidebarToggleItem={true}>
                     View Pro Version
                 </span>
               </a>
@@ -78,7 +78,7 @@ export default function SideBar() {
         </div>
         <div
           className='absolute bottom-0 left-0 justify-center hidden w-full p-4 space-x-4 bg-white lg:flex dark:bg-gray-800'
-          sidebar-bottom-menu
+          sidebarBottomMenu={true}
         >
           <a
             href='#'
