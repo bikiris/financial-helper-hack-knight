@@ -10,15 +10,6 @@
     color: white;
     font-family: 'Poppins', sans-serif;
   }
-  
-  /* .chatbox {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 10px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-  } */
 
  .anthony-chat-bot-page  .chatbox {
     flex-grow:1;
@@ -39,17 +30,21 @@
     max-width: 80%;
   }
   
- .anthony-chat-bot-page  .user-message {
-    background-color: #60a5fa;
-    align-self: flex-end;
-    text-align: right;
+  .anthony-chat-bot-page .user-message,
+  .anthony-chat-bot-page .bot-message {
+      background-color: #60a5fa;
+      align-self: center;
+      text-align: center;
+      max-width: 60%;
+      margin: 5px auto;
+      padding: 10px;
+      border-radius: 10px;
   }
   
- .anthony-chat-bot-page  .bot-message {
-    background-color: #22c55e;
-    align-self: flex-start;
-    text-align: left;
+  .anthony-chat-bot-page .bot-message {
+      background-color: #22c55e;
   }
+  
   
 .anthony-chat-bot-page   .chat-input {
     display: flex;
@@ -80,12 +75,12 @@
   }
   
 
-  /* From Uiverse.io by Spacious74 */ 
 .anthony-chat-bot-page .flex {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .anthony-chat-bot-page .outer-cont {
   padding: 12px 20px;
   border: none;
@@ -102,6 +97,7 @@
     0px 5px 10px #000000cc;
   text-shadow: 1px 1px 1px #000;
 }
+
 .anthony-chat-bot-page .outer-cont::before {
   content: "";
   position: absolute;
