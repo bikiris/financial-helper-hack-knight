@@ -5,14 +5,14 @@ function Reports() {
 
   // Sample data for demonstration
   const monthlyData = {
-    'March 2025': {
+    'January 2025': {
       performance: {
         overall: 2.7,
         stocks: 3.2,
         bonds: 0.8,
         alternatives: 2.1
       },
-      marketSummary: "Markets showed moderate growth in March despite inflation concerns. Tech stocks continued their recovery while financial sector stocks underperformed due to interest rate expectations.",
+      marketSummary: "Markets showed moderate growth in March despite inflation concerns. You took initiative and made some brilliant investment decisons to increase your gains for the month. Job well Done!",
       portfolioValue: 284350,
       previousValue: 276875,
       gains: 7475,
@@ -41,7 +41,7 @@ function Reports() {
         bonds: 0.3,
         alternatives: -0.5
       },
-      marketSummary: "February saw a market correction after January's rally. Higher than expected inflation data prompted concerns about additional rate hikes, affecting most sectors negatively.",
+      marketSummary: "February saw a market correction after January's rally. Higher than expected inflation data prompted concerns about additional rate hikes, affecting most sectors negatively. You made some poor investment decisions and your portfolio took a hit. Don't worry, you can always recover from this.",
       portfolioValue: 276875,
       previousValue: 280239,
       gains: -3364,
