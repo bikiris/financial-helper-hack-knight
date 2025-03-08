@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Reports() {
-  const [selectedMonth, setSelectedMonth] = useState('March 2025');
+  const [selectedMonth, setSelectedMonth] = useState('January 2025');
 
   // Sample data for demonstration
   const monthlyData = {
@@ -164,7 +164,7 @@ function Reports() {
           <h3 className="text-xl font-semibold mb-4">Top Performers</h3>
           <div className="space-y-4">
             {data.topPerformers.map(stock => (
-              <div key={stock.name} className="flex justify-between items-center border-b pb-2">
+              <div key={stock.name} className="flex justify-between items-center border-b border-gray-300 pb-2">
                 <div>
                   <p className="font-medium">{stock.name}</p>
                   <p className="text-sm text-gray-500">Allocation: {stock.allocation}%</p>
@@ -179,7 +179,7 @@ function Reports() {
           <h3 className="text-xl font-semibold mb-4">Underperformers</h3>
           <div className="space-y-4">
             {data.underperformers.map(stock => (
-              <div key={stock.name} className="flex justify-between items-center border-b pb-2">
+              <div key={stock.name} className="flex justify-between items-center border-b border-gray-300 pb-2">
                 <div>
                   <p className="font-medium">{stock.name}</p>
                   <p className="text-sm text-gray-500">Allocation: {stock.allocation}%</p>
