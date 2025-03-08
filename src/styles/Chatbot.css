@@ -1,131 +1,131 @@
-.anthony-chat-bot-page .chat-container {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    height: 500px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #1e293b, #64748b);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-  }
+.anthony-chat-bot-page {
+  height: 100%;
+}
 
- .anthony-chat-bot-page  .chatbox {
-    flex-grow:1;
-    overflow-y: auto;
-    padding: 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  }
-  
- .anthony-chat-bot-page  .user-message,
- .anthony-chat-bot-page  .bot-message {
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 10px;
-    max-width: 80%;
-  }
-  
-  .anthony-chat-bot-page .user-message,
-  .anthony-chat-bot-page .bot-message {
-      background-color: #60a5fa;
-      align-self: center;
-      text-align: center;
-      max-width: 60%;
-      margin: 5px auto;
-      padding: 10px;
-      border-radius: 10px;
-  }
-  
-  .anthony-chat-bot-page .bot-message {
-      background-color: #22c55e;
-  }
-  
-  
-.anthony-chat-bot-page   .chat-input {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-  }
-  
- .anthony-chat-bot-page  .chat-input input {
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-  }
-  
- .anthony-chat-bot-page  .chat-input button {
-    padding: 10px 15px;
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-.anthony-chat-bot-page   .chat-input button:hover {
-    background-color: #e00dcf;
-  }
-  
-
-.anthony-chat-bot-page .flex {
+.anthony-chat-bot-page .chat-input{
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 -2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
 }
 
-.anthony-chat-bot-page .outer-cont {
-  padding: 12px 20px;
+.anthony-chat-bot-page .chat-input input {
+  flex-grow: 1;
+  padding: 10px;
   border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  position: relative;
-  background: linear-gradient(90deg, #5bfcc4, #f593e4, #71a4f0);
-  border-radius: 12px;
-  color: #fff;
-  transition: all 0.3s ease;
-  box-shadow:
-    inset 0px 0px 5px #ffffffa9,
-    inset 0px 35px 30px #000,
-    0px 5px 10px #000000cc;
-  text-shadow: 1px 1px 1px #000;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
-.anthony-chat-bot-page .outer-cont::before {
-  content: "";
+.anthony-chat-bot-page .chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 
+              0 0 50px rgba(149, 76, 233, 0.3);
+  padding: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.anthony-chat-bot-page .chat-container::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  margin: auto;
-  border-radius: 12px;
-  filter: blur(0);
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6, #d946ef, #f59e0b, #10b981);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
   z-index: -1;
-  box-shadow: none;
-  background: conic-gradient(
-    #00000000 80deg,
-    #40baf7,
-    #f34ad7,
-    #5bfcc4,
-    #00000000 280deg
-  );
-  transition: all 0.3s ease;
+  filter: blur(20px);
+  opacity: 0.7;
+  border-radius: 25px;
 }
-.anthony-chat-bot-page .outer-cont:hover::before {
-  filter: blur(15px);
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.anthony-chat-bot-page .outer-cont:active::before {
-  filter: blur(5px);
-  transform: translateY(1px);
+
+.anthony-chat-bot-page .chatbox {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  background: rgba(30, 27, 75, 0.7);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
-.anthony-chat-bot-page .outer-cont:active {
-  box-shadow:
-    inset 0px 0px 5px #ffffffa9,
-    inset 0px 35px 30px #000;
-  margin-top: 3px;
+
+.anthony-chat-bot-page .chatbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.anthony-chat-bot-page .chatbox::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.anthony-chat-bot-page .chatbox::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.anthony-chat-bot-page .chatbox::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.anthony-chat-bot-page .user-message,
+.anthony-chat-bot-page .bot-message {
+  padding: 12px 18px;
+  margin: 10px 0;
+  border-radius: 18px;
+  max-width: 75%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  animation: message-pop 0.3s ease-out;
+  word-wrap: break-word;
+  line-height: 1.4;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.anthony-chat-bot-page .bot-message {
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+@keyframes message-pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.anthony-chat-bot-page .user-message {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  align-self: flex-end;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 0;
 }
