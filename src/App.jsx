@@ -14,7 +14,10 @@ function App({ children }) {
           id='main-content'
           className='flex-1 h-[calc(100vh-64px)] overflow-y-auto bg-gray-50 dark:bg-gray-900 lg:ml-64'
         >
-          {children}
+          <div className="pb-24">
+            {children}
+          </div>
+          
         </main>
       </div>
       
