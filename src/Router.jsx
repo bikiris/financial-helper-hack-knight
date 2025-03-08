@@ -7,14 +7,12 @@ import ChatBot from './pages/ChatBot';
 function Router() {
   
   return (
-    <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="courses" element={<Courses />} />
         <Route path="chatbot" element={<ChatBot />} />
         <Route path="test" element={<div className={"h-full w-full"}>Hello World</div>} />
       </Routes>
-    </BrowserRouter>
   );
   
 }
