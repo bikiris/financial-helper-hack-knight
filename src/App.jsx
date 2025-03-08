@@ -29,7 +29,7 @@ function classNames(...classes) {
 
 export function Navigation() {
   return (
-    <div className="min-h-full fixed w-full z-50">
+    <div className="fixed w-full z-50">
         <Disclosure as="nav" className="bg-gray-100 border-gray-200 border-b">
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
@@ -115,7 +115,7 @@ function SideBar() {
             </form>
           </li>
           <li>
-            <a href="" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+            <a href="/" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
                 <svg className="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
                 <span className="ml-3" sidebar-toggle-item>Dashboard</span>
             </a>
@@ -145,9 +145,9 @@ function SideBar() {
 function App({children}) {
  
   return (
-    <div className="w-full h-full fixed">
+    <div className="w-full h-full">
     <Navigation/>
-    <div className="flex absolute overflow-hidden bg-gray-50 dark:bg-gray-900 w-full h-full top-[60px] left-[255px]" style={{height: "calc(100% - 60px)", width: "calc(100% - 255px)"}}>
+    <div className="flex absolute overflow-hidden bg-gray-50 dark:bg-gray-900 w-full h-full top-[60px] left-[255px]">
     
       <SideBar/>
       
