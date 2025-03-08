@@ -132,6 +132,7 @@ function Chatbot() {
   }, [messages]);
 
   return (
+    <div className="anthony-chat-bot-page">
     <div className="chat-container">
       <div className="chatbox" ref={chatboxRef}>
         {messages.map((message, index) => (
@@ -170,6 +171,7 @@ function Chatbot() {
         </div>
         <button type="button" onClick={sendMessage}>Send</button>
       </div>
+    </div>
     </div>
   );
 }

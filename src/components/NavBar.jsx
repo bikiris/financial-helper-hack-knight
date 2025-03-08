@@ -28,7 +28,7 @@ function classNames(...classes) {
 export default function Navigation() {
   return (
     <div className='fixed w-full z-50'>
-      <Disclosure as='nav' className='bg-gray-100 border-gray-200 border-b'>
+      <Disclosure as='nav' className='bg-gray-100 dark:bg-gray-800 border-gray-200 border-b'>
         <div className='mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex h-16 items-center justify-between'>
             <div className='flex items-center'>
@@ -49,7 +49,7 @@ export default function Navigation() {
                       className={classNames(
                         item.current
                           ? "bg-white text-white"
-                          : "text-gray-300 hover:bg-gray-200 hover:text-white",
+                          : "text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                     >

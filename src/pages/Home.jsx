@@ -3,7 +3,7 @@ import NewsContainer from "../components/NewsContainer";
 
 const Home = () => {  
   return (
-    <div>
+    <div className="grid gap-2">
       
       <BalanceContainer balance={1000.00} />
       <div className="grid grid-cols-3 gap-4">
