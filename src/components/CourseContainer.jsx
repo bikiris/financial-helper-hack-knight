@@ -10,10 +10,13 @@ const CourseContainer = ({imageURL, title, description, internalURL}) => {
           <h1 className='text-3xl bold'>{title}</h1>
           <p>{description}</p>
         </div>
-        
       </div>
-      <Link to={internalURL} className='py-2 px-4 rounded-md border'>Start Course</Link>
-    </div>
+      {locked ? (
+        <img src="public/BlueLock.png" alt="Locked course" className='max-w-[50px]' />
+      ) : (
+        <Link to={internalURL} className='py-2 px-4 rounded-md border'>Start Course</Link>
+      )}    
+      </div>
   )
 
 }

@@ -5,14 +5,14 @@ const courses = [
     "description": "Learn to build robust financial models for company valuation, forecasting, and investment analysis.", 
     "icon": "public/image.png", 
     "internalURL": "/courses/1",
-    "locked": true
+    "locked": false 
   },
   {
     "name": "Investment Banking Fundamentals",
     "description": "Understand the basics of investment banking, M&A, and corporate finance strategies.",
     "icon": "public/finance2.png",
     "internalURL": "/courses/2",
-    "locked": false
+    "locked": true
   },
   {
     "name": "Advanced Corporate Finance",
