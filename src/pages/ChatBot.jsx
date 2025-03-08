@@ -42,7 +42,7 @@ function Chatbot() {
   }, [messages]);
 
   return (
-    <div className="anthony-chat-bot-page">
+    <div className="anthony-chat-bot-page m-8">
     <div className="chat-container">
       <div className="chatbox" ref={chatboxRef}>
         {messages.map((message, index) => (

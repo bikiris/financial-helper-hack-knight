@@ -59,7 +59,7 @@ const StockItem = ({ symbol, name, stockPrice, currentValue, quantity, previousC
 
   return (
     <div 
-      className={`p-4 rounded-lg shadow-sm bg-gray-800 ${getHoverBgColorClass()} cursor-pointer transition-all duration-200 ${isExpanded ? "" :"self-start"}`}
+      className={`p-4 rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800 ${getHoverBgColorClass()} cursor-pointer transition-all duration-200 ${isExpanded ? "" :"self-start"}`}
       onClick={toggleExpanded}
     >
       <div className="flex justify-between items-center">

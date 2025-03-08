@@ -28,16 +28,18 @@ function classNames(...classes) {
 export default function Navigation() {
   return (
     <div className='fixed w-full z-50'>
-      <Disclosure as='nav' className='bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-b'>
+      <Disclosure as='nav' className='bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 border-b'>
         <div className='mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex h-16 items-center justify-between'>
             <div className='flex items-center'>
-              <div className='shrink-0'>
+              <div className='shrink-0 flex text-indigo-600'>
                 <img
                   alt='Your Company'
                   src='https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500'
                   className='size-8'
                 />
+                <span className="m-auto px-2">MoneyTalks!</span>
+                
               </div>
               <div className='hidden md:block'>
                 <div className='ml-10 flex items-baseline space-x-4'>
@@ -63,7 +65,7 @@ export default function Navigation() {
               <div className='ml-4 flex items-center md:ml-6'>
                 <button
                   type='button'
-                  className='relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden'
+                  className='relative rounded-full bg-gray-200 dark:bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden'
                 >
                   <span className='absolute -inset-1.5' />
                   <span className='sr-only'>View notifications</span>

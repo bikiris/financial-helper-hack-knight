@@ -3,13 +3,13 @@ import { Button } from '@headlessui/react';
 
 const CourseContainer = ({ imageURL, title, description, internalURL, locked, prereq}) => {
   return (
-    <div className='w-full flex flex-row justify-between items-center p-4 border border-dotted border-gray-200 rounded-lg shadow-md my-4 hover:border-solid hover:border-blue-300'>
+    <div className='w-full flex flex-row justify-between items-center p-4 border border-dotted border-gray-200 rounded-lg shadow-md my-4 hover:border-solid hover:border-indigo-600'>
       <div className='flex flex-row items-center gap-4'>
         {locked ? (
           <img
             src="public/BlueLock.png"
             alt="Locked"
-            className='max-w-[100px] mr-2 bg-gray-900'
+            className='max-w-[100px] mr-2 bg-gray-900 rounded-lg'
           />
         ) : (
           <img
@@ -28,7 +28,7 @@ const CourseContainer = ({ imageURL, title, description, internalURL, locked, pr
       </div>
       <Link
         to={internalURL}
-        className={`py-2 px-4 rounded-md border ${locked ? 'text-gray-400 border-gray-400 cursor-not-allowed' : 'text-blue-400 border-blue-400'}`}
+        className={`py-2 px-4 rounded-md border ${locked ? 'text-gray-400 border-gray-400 cursor-not-allowed' : 'text-blue-400 border-indigo-400'}`}
         onClick = {(e) => locked && e.preventDefault()}
       >
         {locked ? 'Locked' : 'Start Course'}

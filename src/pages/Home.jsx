@@ -112,7 +112,10 @@ const Home = () => {
             ))}
           </div>
         </div>
+        
       </div>
+      
+        <BalanceContainer balance={12870.0} />
     </div>
   );
 };

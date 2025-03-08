@@ -180,7 +180,7 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
         </h1>
 
         <div className="flex flex-row gap-4 mt-4">
-          <button className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg shadow transition-colors flex items-center gap-2">
+          <button className="px-4 py-2 bg-indigo-700 text-white font-medium rounded-lg shadow transition-colors flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

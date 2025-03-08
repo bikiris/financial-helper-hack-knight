@@ -58,7 +58,7 @@ export default function SideBar() {
             </ul>
             <div className='pt-2 space-y-2'>
               <a
-                href='https://flowbite.com/application-ui/demo/'
+                href=''
                 target='_blank'
                 className='flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700'
               >
