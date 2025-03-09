@@ -84,7 +84,7 @@ function Reports() {
           <label htmlFor="month-select" className="mx-2 ">Select Month</label>
           <select 
             id="month-select"
-            className="px-4 py-2 bg-white border border-gray-300 hover:bg-gray-50 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2"
+            className="px-4 py-2 bg-white border border-gray-300 hover:bg-gray-50 hover:dark:bg-gray-700 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2 dark:bg-gray-800 dark:border-gray-600"
             value={selectedMonth}
             onChange={(e) => setSelectedMonth(e.target.value)}
           >
@@ -164,7 +164,7 @@ function Reports() {
           <h3 className="text-xl font-semibold mb-4">Top Performers</h3>
           <div className="space-y-4">
             {data.topPerformers.map(stock => (
-              <div key={stock.name} className="flex justify-between items-center border-b border-gray-300 pb-2">
+              <div key={stock.name} className="flex justify-between items-center border-b dark:border-gray-600 border-gray-300 pb-2">
                 <div>
                   <p className="font-medium">{stock.name}</p>
                   <p className="text-sm text-gray-500">Allocation: {stock.allocation}%</p>
@@ -179,7 +179,7 @@ function Reports() {
           <h3 className="text-xl font-semibold mb-4">Underperformers</h3>
           <div className="space-y-4">
             {data.underperformers.map(stock => (
-              <div key={stock.name} className="flex justify-between items-center border-b border-gray-300 pb-2">
+              <div key={stock.name} className="flex justify-between items-center border-b dark:border-gray-600 border-gray-300 pb-2">
                 <div>
                   <p className="font-medium">{stock.name}</p>
                   <p className="text-sm text-gray-500">Allocation: {stock.allocation}%</p>

@@ -6,6 +6,8 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
   const chartOptionsRef = useRef(null);
   const chartSeriesRef = useRef(null);
   const [chartReady, setChartReady] = useState(false);
+  
+  const [fakeBalance, setFakeBalance] = useState(balance);
 
   // Generate sample data using useMemo to prevent recreation on each render
   const sampleData = useMemo(() => {

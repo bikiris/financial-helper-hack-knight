@@ -40,15 +40,15 @@ const StockItem = ({ symbol, name, stockPrice, currentValue, quantity, previousC
 
   const getBgColorClass = () => {
     const value = parseFloat(todaysGainLoss.amount);
-    if (value > 0) return "bg-green-100";
-    if (value < 0) return "bg-red-100";
+    if (value > 0) return "bg-green-100 dark:bg-green-900";
+    if (value < 0) return "bg-red-100 dark:bg-red-900";
     return "bg-gray-700";
   };
   
   const getHoverBgColorClass = () => {
     const value = parseFloat(todaysGainLoss.amount);
-    if (value > 0) return "hover:bg-green-200/50";
-    if (value < 0) return "hover:bg-red-200/50";
+    if (value > 0) return "hover:bg-green-200/50 hover:dark:bg-green-800/50";
+    if (value < 0) return "hover:bg-red-200/50 hover:dark:bg-red-800/50";
     return "hover:bg-gray-200/50";
   };
 
@@ -62,7 +62,7 @@ const StockItem = ({ symbol, name, stockPrice, currentValue, quantity, previousC
       className={`p-4 rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800 ${getHoverBgColorClass()} cursor-pointer transition-all duration-200 ${isExpanded ? "" :"self-start"}`}
       onClick={toggleExpanded}
     >
-      <div className="md:flex  justify-between items-center">
+      <div className="md:flex justify-between items-center">
         <div>
           <h2 className="text-xl font-bold">{symbol}</h2>
           <p className="text-gray-600">{name}</p>

@@ -65,7 +65,7 @@ const NewsContainer = ({ title, newsLink, imageURL, source, timestamp }) => {
   };
 
   return (
-    <div className='flex flex-col gap-4 p-5 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-700 bg-gray-100'>
+    <div className='flex flex-col gap-4 p-5 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 bg-gray-100'>
       <div className='overflow-hidden rounded-lg h-48'>
         <img
           src={imageURL}
