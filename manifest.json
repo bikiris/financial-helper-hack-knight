@@ -22,6 +22,7 @@
   "scope": ".",
   "display": "standalone",
   "theme_color": "#f6f3f4",
-  "dark_theme_color": "#f6f3f4",
+  "dark_theme_color": "#101828",
+  "light_theme_color": "#f6f3f4",
   "background_color": "#ffffff"
 }

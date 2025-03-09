@@ -80,7 +80,7 @@ const StockItem = ({ symbol, name, stockPrice, currentValue, quantity, previousC
       </div>
       
       {isExpanded && (
-        <div className="space-y-1 mt-3 pt-3 border-t border-gray-200">
+        <div className="space-y-1 mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
           <p>Last Price: ${stockPrice.toFixed(2)}</p>
           <p>
             Total Gain/Loss: <span className={getValueColor(totalGainLoss.amount)}>
