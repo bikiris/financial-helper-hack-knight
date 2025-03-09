@@ -71,7 +71,7 @@ Accessing real-time news data involved overcoming API limitations and ensuring c
 To run the react project run the following in the terminal:
 
 ```
-git clone 
+git clone https://github.com/bikiris/financial-helper-hack-knight.git
 npm install 
 npm run dev 
 ```
