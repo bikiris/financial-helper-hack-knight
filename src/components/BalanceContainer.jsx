@@ -172,7 +172,7 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
   }, [sampleData]);
 
   return (
-    <div className="flex flex-col md:flex-row items-center border border-blue-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+    <div className="flex flex-col md:flex-row items-center border border-blue-100 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
       <div className="flex flex-col gap-4 p-6 w-full md:w-1/2">
         <h2 className="font-semibold text-lg">Cash Balance</h2>
         <h1 className="font-extrabold text-5xl text-indigo-700">
@@ -195,7 +195,7 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
             </svg>
             Add Money
           </button>
-          <button className="px-4 py-2 bg-white border border-gray-300 hover:bg-gray-50 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2">
+          <button className="px-4 py-2 dark:bg-gray-700 hover:dark:bg-gray-800 bg-white border border-gray-300 hover:bg-gray-50 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -214,7 +214,7 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
       </div>
       
       {/* Balance History Chart */}
-      <div className="w-full pr-6 h-64 md:h-auto md:border-l border-blue-100">
+      <div className="w-full pr-6 h-64 md:h-auto md:border-l border-blue-100 dark:border-gray-700">
         {chartReady && chartOptionsRef.current && chartSeriesRef.current && (
           <div className="chart-container" style={{ width: '100%', height: '100%', minHeight: '200px' }}>
             <ReactApexChart

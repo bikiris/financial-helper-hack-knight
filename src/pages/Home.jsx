@@ -56,8 +56,8 @@ const Home = () => {
   return (
     <div className='grid gap-4 p-6'>
       <BalanceContainer balance={1000.0} />
-      <div className='border border-blue-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden'>
-        <div className='flex flex-row items-center justify-between p-6 border-b border-blue-100'>
+      <div className='border border-blue-100 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden'>
+        <div className='flex flex-row items-center justify-between p-6 border-b dark:border-gray-700 border-blue-100'>
           <h1 className='font-bold text-xl '>Stocks & ETFs</h1>
           <button className='px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg shadow transition-colors flex items-center gap-2'>
             View All
@@ -79,8 +79,8 @@ const Home = () => {
           <StockContainer />
         </div>
       </div>
-      <div className='border border-blue-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden'>
-        <div className='flex flex-row items-center justify-between p-6 border-b border-blue-100'>
+      <div className='border border-blue-100 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden'>
+        <div className='flex flex-row items-center justify-between p-6 border-b dark:border-gray-700 border-blue-100'>
           <h1 className='font-bold text-xl'>Latest News</h1>
           <button className='px-3 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg shadow transition-colors flex items-center gap-2'>
             More News
