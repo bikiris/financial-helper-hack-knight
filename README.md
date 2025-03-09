@@ -1,4 +1,4 @@
-# Money Talk 
+# MoneyTalks! 
 
 ![](screenshot/Main_logo.png)
 
