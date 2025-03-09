@@ -2,10 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import OpenAI from "openai";
 import "../styles/ChatBot.css";
 
-const openai = new OpenAI({ apiKey: "YOUR_OPENAI_API_KEY", dangerouslyAllowBrowser: true });
+const openai = new OpenAI({ apiKey: "API-KEY", dangerouslyAllowBrowser: true });
 
 function Chatbot() {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { text: "Hello, I am Minerva, your helpful AI Assistant.", sender: "bot" }
+  ]);
   const [inputValue, setInputValue] = useState('');
   const chatboxRef = useRef(null);
 
