@@ -17,6 +17,9 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
+// 101828
+document.querySelector('meta[name="theme_color"]').setAttribute('content', '#101828');
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,6 +1,6 @@
 {
   "short_name": "MoneyTalks!",
-  "name": "Create React App Sample",
+  "name": "MoneyTalks!",
   "icons": [
     {
       "src": "/public/main-logo-ico.ico",
@@ -22,5 +22,6 @@
   "scope": ".",
   "display": "standalone",
   "theme_color": "#f6f3f4",
+  "dark_theme_color": "#f6f3f4",
   "background_color": "#ffffff"
 }

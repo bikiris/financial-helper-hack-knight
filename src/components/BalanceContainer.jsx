@@ -10,20 +10,22 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
   const [fakeBalance, setFakeBalance] = useState(balance);
 
   // Generate sample data using useMemo to prevent recreation on each render
+  
   const sampleData = useMemo(() => {
     return balanceHistory.length > 0
       ? balanceHistory
       : [
-          { date: "1 Mar", amount: balance - 120 },
-          { date: "2 Mar", amount: balance - 85 },
-          { date: "3 Mar", amount: balance - 55 },
-          { date: "4 Mar", amount: balance - 25 },
-          { date: "5 Mar", amount: balance },
+          { date: "1 Mar", amount: fakeBalance - 120 },
+          { date: "2 Mar", amount: fakeBalance - 85 },
+          { date: "3 Mar", amount: fakeBalance - 55 },
+          { date: "4 Mar", amount: fakeBalance - 25 },
+          { date: "5 Mar", amount: fakeBalance },
         ];
-  }, [balance, balanceHistory]);
+  }, [fakeBalance, balanceHistory]);
 
   // Initialize chart configuration only once
   useEffect(() => {
+    
     // Only configure the chart if it hasn't been configured or data changed
     if (!chartReady || !chartOptionsRef.current || !chartSeriesRef.current) {
       // Set chart options
@@ -160,7 +162,7 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
 
       setChartReady(true);
     }
-  }, [sampleData, chartReady]);
+  }, [sampleData, chartReady, fakeBalance]);
 
   // Update chart data when dependencies change
   useEffect(() => {
@@ -178,11 +180,15 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
       <div className="flex flex-col gap-4 p-6 w-full md:w-1/2">
         <h2 className="font-semibold text-lg">Cash Balance</h2>
         <h1 className="font-extrabold text-5xl text-indigo-700">
-          ${parseFloat(balance).toFixed(2)}
+          ${parseFloat(fakeBalance).toFixed(2)}
         </h1>
 
         <div className="flex flex-row gap-4 mt-4">
-          <button className="px-4 py-2 bg-indigo-700 text-white font-medium rounded-lg shadow transition-colors flex items-center gap-2">
+          <button className="px-4 py-2 bg-indigo-700 text-white font-medium rounded-lg shadow transition-colors flex items-center gap-2" onClick={function(){
+            
+            setFakeBalance(Math.min(fakeBalance + 100, 20000))
+            
+          }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -197,7 +203,11 @@ const BalanceContainer = ({ balance, balanceHistory = [] }) => {
             </svg>
             Add Money
           </button>
-          <button className="px-4 py-2 dark:bg-gray-700 hover:dark:bg-gray-800 bg-white border border-gray-300 hover:bg-gray-50 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2">
+          <button className="px-4 py-2 dark:bg-gray-700 hover:dark:bg-gray-800 bg-white border border-gray-300 hover:bg-gray-50 text-gray-400 font-medium rounded-lg shadow transition-colors flex items-center gap-2" onClick={function(){
+            
+            setFakeBalance(Math.max(fakeBalance - 100, 200))
+            
+          }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
