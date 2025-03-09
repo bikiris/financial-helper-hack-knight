@@ -95,21 +95,21 @@ function Reports() {
         </div>
       </div>
       
-      <div className="bg-white shadow rounded-lg p-6 mb-6">
+      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mb-6">
         <h2 className="text-2xl font-bold mb-4">{selectedMonth} Performance Report</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <p className="text-gray-500 mb-1">Current Portfolio Value</p>
             <p className="text-2xl font-bold">{formatCurrency(data.portfolioValue)}</p>
           </div>
-          <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <p className="text-gray-500 mb-1">Monthly Change</p>
             <p className={`text-2xl font-bold ${data.gains >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {formatCurrency(data.gains)} ({formatPercentage(data.performance.overall)})
             </p>
           </div>
-          <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <p className="text-gray-500 mb-1">YTD Return</p>
             <p className="text-2xl font-bold text-blue-600">+9.8%</p>
           </div>
@@ -160,7 +160,7 @@ function Reports() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
           <h3 className="text-xl font-semibold mb-4">Top Performers</h3>
           <div className="space-y-4">
             {data.topPerformers.map(stock => (
@@ -175,7 +175,7 @@ function Reports() {
           </div>
         </div>
         
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
           <h3 className="text-xl font-semibold mb-4">Underperformers</h3>
           <div className="space-y-4">
             {data.underperformers.map(stock => (
@@ -191,7 +191,7 @@ function Reports() {
         </div>
       </div>
       
-      <div className="bg-white shadow rounded-lg p-6 mt-6">
+      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mt-6">
         <h3 className="text-xl font-semibold mb-4">Recommendations</h3>
         <div className="space-y-3">
           <p className="text-gray-700">
