@@ -4,7 +4,7 @@ const courses = [
   {"name": "Financial Modeling & Valuation", 
     "description": "Learn to build robust financial models for company valuation, forecasting, and investment analysis.", 
     "icon": "public/image.png", 
-    "internalURL": "/courses/1",
+    "internalURL": "https://www.udemy.com/course/beginner-to-pro-in-excel-financial-modeling-and-valuation/?couponCode=NVD20PMUS",
     "locked": false,
     "prereq": null
   },

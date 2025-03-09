@@ -41,7 +41,7 @@ function Reports() {
         bonds: 0.3,
         alternatives: -0.5
       },
-      marketSummary: "February saw a market correction after January's rally. Higher than expected inflation data prompted concerns about additional rate hikes, affecting most sectors negatively. You made some poor investment decisions and your portfolio took a hit. Don't worry, you can always recover from this.",
+      marketSummary: "February saw a market correction after January's rally. Higher than expected inflation data prompted concerns about additional rate hikes, affecting most sectors negatively. As a result you loss some of your gains,don't worry, you can always recover from this.",
       portfolioValue: 276875,
       previousValue: 280239,
       gains: -3364,
@@ -194,14 +194,14 @@ function Reports() {
       <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mt-6">
         <h3 className="text-xl font-semibold mb-4">Recommendations</h3>
         <div className="space-y-3">
-          <p className="text-gray-700 dark:text-gray-400">
-            <span className="font-medium">Rebalancing Opportunity:</span> Your international stock allocation is slightly above target. Consider rebalancing to maintain your desired asset allocation.
+          <p className="text-gray-700">
+            <span className="font-medium">Rebalancing Opportunity:</span> Your international stock allocation is slightly above target. Consider diversifying your Portfolio to maintain your desired asset allocation.
           </p>
-          <p className="text-gray-700 dark:text-gray-400">
-            <span className="font-medium">Tax-Loss Harvesting:</span> There may be opportunities to harvest losses in your underperforming positions to offset capital gains.
+          <p className="text-gray-700">
+            <span className="font-medium">Tax-Loss Harvesting:</span> There may be opportunities to harvest losses in your underperforming positions to offset capital gains but deducting the losses on your tax returns.
           </p>
-          <p className="text-gray-700 dark:text-gray-400">
-            <span className="font-medium">Interest Rate Outlook:</span> With changing interest rate expectations, consider reviewing your bond duration strategy.
+          <p className="text-gray-700">
+            <span className="font-medium">Interest Rate Outlook:</span> With changing interest rate expectations, consider reviewing your strategy to take full advantage.
           </p>
         </div>
       </div>
