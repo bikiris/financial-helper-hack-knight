@@ -5,7 +5,7 @@ import NewsContainer from "../components/NewsContainer";
 import StockContainer from "../components/StockContainer";
 
 
-const API_URL = 'http://localhost:3000/api/news';
+const API_URL = 'http://fortunate-mandy-bikiris-f6cfbd6d.koyeb.app/api/news';
 //backup data if api fails
 const newsData = [
   {
