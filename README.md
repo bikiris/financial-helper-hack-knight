@@ -97,8 +97,8 @@ Here are all the following technologies we leveraged to create [MoneyTalks!](). 
 
 Here are the talented developers that created this app.
 
-* [Andy Lin](https://www.linkedin.com/in/andy-lin-73ba372b7/): Frontend Developer
+* [Andy Lin](https://www.linkedin.com/in/andy-lin-73ba372b7/): Full Stack Developer
 * [Anthony Atongi Jr](https://www.linkedin.com/in/anthony-antongi): Full Stack Developer
 * [Fedy Cherif](https://www.linkedin.com/in/fedycherif): Full Stack Developer
-* [Fengsheng Chen](https://www.linkedin.com/in/fengsheng-chen): Backend Developer
+* [Fengsheng Chen](https://www.linkedin.com/in/fengsheng-chen): Full Stack Developer
 
