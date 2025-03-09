@@ -117,7 +117,7 @@ function Reports() {
         
         <div className="mb-6">
           <h3 className="text-xl font-semibold mb-2">Market Summary</h3>
-          <p className="text-gray-700">{data.marketSummary}</p>
+          <p className="text-gray-700 dark:text-gray-400">{data.marketSummary}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -194,13 +194,13 @@ function Reports() {
       <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mt-6">
         <h3 className="text-xl font-semibold mb-4">Recommendations</h3>
         <div className="space-y-3">
-          <p className="text-gray-700">
+          <p className="text-gray-700 dark:text-gray-400">
             <span className="font-medium">Rebalancing Opportunity:</span> Your international stock allocation is slightly above target. Consider rebalancing to maintain your desired asset allocation.
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-700 dark:text-gray-400">
             <span className="font-medium">Tax-Loss Harvesting:</span> There may be opportunities to harvest losses in your underperforming positions to offset capital gains.
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-700 dark:text-gray-400">
             <span className="font-medium">Interest Rate Outlook:</span> With changing interest rate expectations, consider reviewing your bond duration strategy.
           </p>
         </div>
