@@ -104,7 +104,7 @@ const Home = () => {
               <NewsContainer
                 key={index}
                 title={news.title}
-                newsLink={news.newsLink}
+                newsLink={news.url}
                 imageURL={news.image}
                 source={news.source}
                 timestamp={news.publishedAt}
