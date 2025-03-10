@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import OpenAI from "openai";
 import "../styles/ChatBot.css";
 
-const openai = new OpenAI({ apiKey: "API-KEY", dangerouslyAllowBrowser: true });
+const openai = new OpenAI({ apiKey: "API KEY", dangerouslyAllowBrowser: true });
 
 function Chatbot() {
   const [messages, setMessages] = useState([
@@ -20,7 +20,7 @@ function Chatbot() {
         const response = await openai.chat.completions.create({
           model: "gpt-4o",
           messages: [
-            { role: "system", content: "You are Minerva, a helpful investment assistant." },
+            { role: "system", content: "You are Minerva, a helpful investment assistant.Answer only questions relating to Finance. If it isnt finance related say sorry, I can only talk about finance. Use short and simple language as tho explaining to a child keep to one paragraph" },
             ...messages.map(msg => ({ role: msg.sender === "user" ? "user" : "assistant", content: msg.text })),
             { role: "user", content: inputValue },
           ],
